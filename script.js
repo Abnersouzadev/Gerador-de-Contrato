@@ -16,7 +16,7 @@ function subtrairValorFinanciado() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 - valor2;
-        valorFinanciado.value = resultado;
+        valorFinanciado.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         valorFinanciado.value = "Por favor, insira números válidos em todos os campos";
@@ -63,7 +63,7 @@ function multiplicarValorTotal() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 * valor2;
-        valorTotal.value = resultado;
+        valorTotal.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         valorTotal.value = "Por favor, insira números válidos em todos os campos";
@@ -86,7 +86,7 @@ function subtrairValorJuros() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor2 - valor1;
-        valorJuros.value = resultado;
+        valorJuros.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         valorJuros.value = "Por favor, insira números válidos em todos os campos";
@@ -109,7 +109,7 @@ function multiplicarJurosAbusivos() {
     if (!isNaN(valor1)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 / 1.5;
-        jurosAbusivos.value = resultado;
+        jurosAbusivos.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         valorJuros.value = "Por favor, insira números válidos em todos os campos";
@@ -132,7 +132,7 @@ function subtrairJurosPermitidos() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 - valor2;
-        jurosPermitidos.value = resultado;
+        jurosPermitidos.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         jurosPermitidos.value = "Por favor, insira números válidos em todos os campos";
@@ -155,7 +155,7 @@ function dividirJurosPorParcela() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 / valor2;
-        jurosPorParcela.value = resultado;
+        jurosPorParcela.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         jurosPorParcela.value = "Por favor, insira números válidos em todos os campos";
@@ -178,7 +178,7 @@ function subtrairParcelaCorrigida() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 - valor2;
-        parcelaCorrigida.value = resultado;
+        parcelaCorrigida.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         parcelaCorrigida.value = "Por favor, insira números válidos em todos os campos";
@@ -201,7 +201,7 @@ function multiplicarValorReenbolso() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 * valor2;
-        valorReenbolso.value = resultado;
+        valorReenbolso.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         valorReenbolso.value = "Por favor, insira números válidos em todos os campos";
@@ -224,7 +224,7 @@ function multiplicarValorEconomia() {
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
         var resultado = valor1 * valor2;
-        valorEconomia.value = resultado;
+        valorEconomia.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
         valorEconomia.value = "Por favor, insira números válidos em todos os campos";
