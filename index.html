@@ -20,8 +20,9 @@
     
     
     <div class="formulario-contratante">
+        <h3>Dados Contratante</h3>
         <div class="dados-contratante">
-            <h3>Dados Contratante</h3>
+            
             <form id="form-dados">
                 
                 <div class="form-group">
@@ -33,160 +34,171 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="nome">Data de Nascimento</label>
-                    <input type="date" id="data-nascimento" name="data-nascimento" required>
-                </div>
-                <div class="form-group">
-                    <label for="nome">Profissão</label>
-                    <input type="text" id="profissao" name="profissao" required>
-                </div>
-                <div class="form-group">
-                    <label for="nome">Estado civil</label>
-                    <input type="text" id="Estado-civil" name="profissao" required>
-                </div>
-                <div class="form-group">
-                    <label for="nome">Rg</label>
-                    <input type="text" id="rg" name="Rg" required>
-                </div>
-                <div class="form-group">
-                    <label for="nome">CPF:</label>
+                    <label for="nome">CPF</label>
                     <input type="text" id="CPF" name="nome" required>
                 </div>
-                <div class="form-group">
-                    <label for="nome">Telefone</label>
-                    <input type="text" id="telefone" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="nome">Endereço</label>
-                    <input type="text" id="endereço" name="endereço" required>
-                </div>
-                <div class="form-group">
-                    <label for="nome">CEP</label>
-                    <input type="text" id="CEP" name="CEP" required>
-                </div>
+              </form>  
         </div>
        
             
     </div>
-    <div class="formulario-financeiro">
-        
-            <h3 class="h3-dados-financeiros">Dados financeiros</h3>
-            <button class="button-calcular" onclick="chamarFuncoes()">Calcular</button>
-        
-        <div class="dados-financeiros">
+    
+    <div><h3 class="h3-dados-financeiros">Dados financeiros</h3>
+        <div class="formulario-financeiro">
             
-            <div class="form-group">
-                <label for="nome">Financeira</label>
-                <input type="text" id="Financeira" name="Financeira" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Solicitação</label>
-                <input type="text" id="Solicitação" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Veículo/Imóvel</label>
-                <input type="text" id="veiculo-imovel" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Valor do Veículo/Imóvel</label>
-                <input type="number" step="0.01" id="Valor-do-veiculo" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Entrada</label>
-                <input type="text" id="Entrada" name="nome"  required>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Valor Financiado</label>
-                <input type="text" id="Valor-Financiado" value="Campo automático" readonly>
-            </div>
-            <div class="form-group">
-                <label for="nome">Valor atual da parcela</label>
-                <input type="text" id="Valor-atual-parcela" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Quantidade de parcelas</label>
-                <input type="text" id="quantidade-de-parcelas" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Parcela em atraso</label>
-                <input type="text" id="Parcelas-em-atraso" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="nome">Parcelas Pagas</label>
-                <input type="text" id="parcelas-pagas" name="nome" required>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Parcelas Restantes</label>
                 
-                <input type="text" id="parcelas-restantes" name="nome" value="Campo automático" readonly>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Valor Total</label>
                 
-                <input type="text" id="valor-total" name="nome" value="Campo Automático" readonly>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Valor do Juros</label>
+                <div class="div-preencher">
+                <div class="form-group">
+                    <label for="nome">Financeira</label>
+                    <input type="text" id="Financeira" name="Financeira" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Solicitação</label>
+                    <input type="text" id="Solicitação" name="nome" required>
+                </div>
                 
-                <input type="text" id="valor-do-juros" name="nome" value="Campo Automático" readonly>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Juros abusivos</label>
+                <div class="form-group">
+                    <label for="nome">Valor do Veículo/Imóvel</label>
+                    <input type="number" step="0.01" id="Valor-do-veiculo" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Entrada</label>
+                    <input type="text" id="Entrada" name="nome"  required>
+                </div>
                 
-                <input type="text" id="juros-abusivos" name="nome" value="Campo Automático" readonly>
+                <div class="form-group">
+                    <label for="nome">Valor atual da parcela</label>
+                    <input type="text" id="Valor-atual-parcela" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Quantidade de parcelas</label>
+                    <input type="text" id="quantidade-de-parcelas" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Parcela em atraso</label>
+                    <input type="text" id="Parcelas-em-atraso" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Parcelas Pagas</label>
+                    <input type="text" id="parcelas-pagas" name="nome" required>
+                </div>
+                <button class="button-calcular" onclick="chamarFuncoes()">Calcular</button>
             </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Juros Permitidos:</label>
                 
-                <input type="text" id="juros-permitidos" name="nome" value="Campo Automático" readonly>
+            <div class="dados-financeiros">
+                <div class="form-group" id="input-none">
+                    <label for="nome">Valor Financiado</label>
+                    <input type="text" id="Valor-Financiado" value="Campo automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Parcelas Restantes</label>
+                    <input type="text" id="parcelas-restantes" name="nome" value="Campo automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Valor Total</label>
+                    
+                    <input type="text" id="valor-total" name="nome" value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Valor do Juros</label>
+                    
+                    <input type="text" id="valor-do-juros" name="nome" value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Juros abusivos</label>
+                    
+                    <input type="text" id="juros-abusivos" name="nome" value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Juros Permitidos:</label>
+                    
+                    <input type="text" id="juros-permitidos" name="nome" value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Juros por Parcela</label>
+                    
+                    <input type="text" id="juros-por-parcela" name="nome"  value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Parcela Corrigida</label>
+                    
+                    <input type="text" id="parcela-corrigida" name="nome" value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Valor do Reembolso</label>
+                    
+                    <input type="text" id="valor-reenbolso" name="nome" value="Campo Automático" readonly>
+                </div>
+                <div class="form-group" id="input-none">
+                    <label for="nome">Valor da Economia</label>
+                    <input type="text" id="valor-da-economia" name="nome" value="Campo Automático" readonly>
+                </div>
+               
             </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Juros por Parcela</label>
-                
-                <input type="text" id="juros-por-parcela" name="nome"  value="Campo Automático" readonly>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Parcela Corrigida</label>
-                
-                <input type="text" id="parcela-corrigida" name="nome" value="Campo Automático" readonly>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Valor do Reembolso</label>
-                
-                <input type="text" id="valor-reenbolso" name="nome" value="Campo Automático" readonly>
-            </div>
-            <div class="form-group" id="input-none">
-                <label for="nome">Valor da Economia</label>
-                <input type="text" id="valor-da-economia" name="nome" value="Campo Automático" readonly>
-            </div>
-        </div>
-    </div>
+            
+        </div></div>
+   
+<div class="div-botao-laudo"> <button class="button-laudo" onclick="openModal()">Gerar Laudo</button></div>
    
 
-    <button class="button-laudo" onclick="openModal()">Gerar Laudo</button>
+<div><h3>Dados Contrato</h3>
 
-        <div class="div-assessoria">
-            <div class="form-group" >
-                <label for="nome">Valor da assessoria</label>
-                <input type="text" id="valor-assessoria" name="nome" required>
-            </div>
-            <div class="form-group" >
-                <label for="nome">Forma de Pagamento</label>
-                <input type="text" id="forma-pagamento" name="nome"  required>
-            </div>
-            <div class="form-group" >
-                <label for="nome">Data</label>
-                <input type="date" id="input-date" name="nome"  required>
-            </div>
-            <button class="button-contrato" onclick="abrirContrato()">Contrato</button>
+    <div class="div-assessoria">
+        
+        
+        
+        <div class="form-group">
+            <label for="nome">Data de Nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
         </div>
+        <div class="form-group">
+            <label for="nome">Profissão</label>
+            <input type="text" id="profissao" name="profissao" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">Estado civil</label>
+            <input type="text" id="Estado-civil" name="profissao" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">Rg</label>
+            <input type="text" id="rg" name="Rg" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="nome">Telefone</label>
+            <input type="text" id="telefone" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">Endereço</label>
+            <input type="text" id="endereço" name="endereço" required>
+        </div>
+        <div class="form-group">
+            <label for="nome">CEP</label>
+            <input type="text" id="CEP" name="CEP" required>
+        </div>
+        <div class="form-group" >
+            <label for="nome">Valor da assessoria</label>
+            <input type="text" id="valor-assessoria" name="nome" required>
+        </div>
+        <div class="form-group" >
+            <label for="nome">Forma de Pagamento</label>
+            <input type="text" id="forma-pagamento" name="nome"  required>
+        </div>
+        <div class="form-group" >
+            <label for="nome">Data</label>
+            <input type="date" id="input-date" name="nome"  required>
+        </div>
+        <button class="button-contrato" onclick="abrirContrato()">Contrato</button>
+    </div></div>
+
        
         
         
         
         
         
-    </form>
+    
 </div>
 
 

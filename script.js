@@ -108,7 +108,7 @@ function multiplicarJurosAbusivos() {
     // Verifica se os valores são válidos
     if (!isNaN(valor1)) {
         // Subtrai os valores e exibe o resultado
-        var resultado = valor1 * 1.5;
+        var resultado = valor1 / 1.5;
         jurosAbusivos.value = resultado;
     } else {
         // Caso os valores não sejam válidos
@@ -435,7 +435,7 @@ function chamarFuncoes() {
     let banco = document.getElementById("Financeira").value;
     localStorage.setItem("Financeira", banco);
 
-    let veiculoImovel = document.getElementById("veiculo-imovel").value;
+    let veiculoImovel = document.getElementById("Solicitação").value;
     localStorage.setItem("veiculo-imovel", veiculoImovel);
 
     let financiamento = document.getElementById("Valor-Financiado").value;

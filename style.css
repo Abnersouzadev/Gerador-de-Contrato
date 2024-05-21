@@ -6,6 +6,7 @@ body {
     background-color: #ffffff;
     display: flex;
     color: #464545;
+    margin: 10px;
 }
 
 .menu-lateral{
@@ -33,19 +34,20 @@ body {
 .menu-itens{
   width: 100%;
   text-align: center;
-  color: #fafafa;
+  color: #003F96;
   border: #aaa 0px solid;
   height: 70px;
   border-left: none;
   max-width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  background-color: #003F96;
+  background-color: white;
   
 }
 
 .menu-itens:hover{
   background-color: #0056b3;
+  color: #fafafa;
 }
 
 .menu-item{
@@ -60,22 +62,25 @@ body {
 }
 
 .container {
-    max-width: 100%;
-    width: 100%;
+    max-width: 1400px;
+    width: 90%;
     margin-top: 100px;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-right: 10px;
     padding: 20px;
     background-color: #fffefe;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-top: 0px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h3{
   margin-bottom: 50px;
   margin-top: 30px;
+  color: #003F96;
 }
 .h3-dados-financeiros{
   margin-bottom: 30px;
@@ -85,19 +90,43 @@ h3{
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+  
 }
+
+.formulario-financeiro{
+  display: flex;
+  width: 100%;
+  
+}
+
+
+.div-preencher{
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+ 
+  margin: 5px;
+}
+
+
 
 .dados-financeiros{
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
+  width: 50%;
+ 
+  margin: 5px;
 }
+
 
 
 .dados-contratante{
   width: 100%;
+  
 }
 
 #form-dados{
@@ -111,17 +140,23 @@ h3{
 
 .button-calcular{
   margin-bottom: 30px;
-  background-color: #003F96;
+  background-color: white;
   border-radius: 10px;
-  color: #fafafa;
+  color: #003F96;
   border: none;
   height: 40px;
   width: 100px;
+  margin-bottom: 20px;
+  margin-top: 35px;
+  margin-right: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: medium;
+  font-weight: 600;
 }
 
 .button-calcular:hover{
   background-color: #0056b3;
-  
+  color: #fafafa;
 }
 
 .div-assessoria{
@@ -129,36 +164,53 @@ h3{
   justify-content: space-around;
   width: 100%;
   margin-top: 40px;
+  flex-wrap: wrap;
+  
 }
 
 .button-contrato{
   margin-bottom: 30px;
-  background-color: #003F96;
+  background-color: white;
   border-radius: 10px;
-  color: #fafafa;
+  color: #003F96;
   border: none;
-  height: 40px;
-  width: 100px;
+  height: 50px;
+  width: 150px;
   margin-top: 23px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: medium;
+  font-weight: 600;
+
 }
 
 .button-laudo{
   margin-bottom: 30px;
-  background-color: #003F96;
+  background-color: white;
   border-radius: 10px;
-  color: #fafafa;
+  color: #003F96;
   border: none;
-  height: 40px;
-  width: 100px;
+  height: 50px;
+  width: 150px;
   margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: medium;
+  font-weight: 600;
+}
+
+.div-botao-laudo{
+  width: 70%;
+  display: flex;
+  justify-content: center;
 }
 
 .button-laudo:hover{
   background-color: #0056b3;
+  color: #fafafa;
 }
 
 .button-contrato:hover{
   background-color: #0056b3;
+  color: #fafafa;
 }
 .form-group {
     margin-bottom: 20px;
@@ -167,20 +219,23 @@ h3{
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 .form-group input[type="date"]{
-  width: 90%;
+  width: 70%;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;
+  margin: 5px;
 }
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="number"] {
-    width: 90%;
+    width: 70%;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
+    margin: 5px;
 }
 .form-group input[type="submit"] {
     background-color: #003F96;
@@ -218,6 +273,8 @@ h3{
         border: 1px solid #888;
         width: 95%;
         padding-top: 10px;
+        max-height: 95%;
+        
       }
       
       .close {
