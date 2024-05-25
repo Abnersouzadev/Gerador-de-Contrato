@@ -47,12 +47,12 @@ function subtrairParcelasRestantes() {
     }
 }
 
-//valor total : quantidade de parcela X valor atual da parcela
+//valor total : quantidade de parcelas restantes X valor atual da parcela
 
 function multiplicarValorTotal() {
     // Seleciona os elementos de entrada
     let valorTotal = document.getElementById('valor-total')
-    let quantidadeParcela = document.getElementById("quantidade-de-parcelas")
+    let quantidadeParcela = document.getElementById("parcelas-restantes")
     let valorAtualParcela = document.getElementById("Valor-atual-parcela")
 
     // Obtém os valores dos campos e converte para números
@@ -70,22 +70,22 @@ function multiplicarValorTotal() {
     }
 }
 
-//valor do juros : valor financiado - valor total
+//valor do juros : quantidade de parcelas x valor atual da parcela
 
 function subtrairValorJuros() {
     // Seleciona os elementos de entrada
     let valorJuros = document.getElementById('valor-do-juros')
-    let valorFinanciado = document.getElementById('Valor-Financiado')
-    let valorTotal = document.getElementById('valor-total')
+    let quantidadeParcela = document.getElementById('quantidade-de-parcelas')
+    let valorParcela = document.getElementById('Valor-atual-parcela')
 
     // Obtém os valores dos campos e converte para números
-    var valor1 = parseFloat(valorFinanciado.value);
-    var valor2 = parseFloat(valorTotal.value);
+    var valor1 = parseFloat(quantidadeParcela.value);
+    var valor2 = parseFloat(valorParcela.value);
     
     // Verifica se os valores são válidos
     if (!isNaN(valor1) && !isNaN(valor2)) {
         // Subtrai os valores e exibe o resultado
-        var resultado = valor2 - valor1;
+        var resultado = valor2 * valor1;
         valorJuros.value = resultado.toFixed(2);
     } else {
         // Caso os valores não sejam válidos
@@ -457,8 +457,7 @@ function chamarFuncoes() {
     localStorage.setItem("forma-pagamento", formaPagamento);
 
     let dataContrato = document.getElementById("input-date").value;
-    let dataFormatada = formatarData(dataContrato);
-    localStorage.setItem("input-date", dataFormatada);
+    localStorage.setItem("input-date", dataContrato);
 
 
     let url = 'contrato.html';
