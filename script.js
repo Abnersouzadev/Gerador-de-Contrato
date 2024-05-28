@@ -585,5 +585,15 @@ window.onload = function() {
 
 
 
-    
-    
+document.addEventListener("DOMContentLoaded", function() {
+    var savedData = localStorage.getItem("notepadData");
+    if (savedData) {
+        document.getElementById("notepad").value = savedData;
+    }
+});
+
+// Salvar dados quando o usuário sair da página
+window.addEventListener("beforeunload", function() {
+    var data = document.getElementById("notepad").value;
+    localStorage.setItem("notepadData", data);
+});

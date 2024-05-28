@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Dados</title>
+    <title>Sistema Jardini</title>
+    <link rel="icon" href="img/jardini assesoria branco.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
@@ -13,25 +14,36 @@
 <div class="menu-lateral">
     
     <div class="menu-div">
-        <div class="div-img-menu"><img class="img-menu" src="img/jardini assesoria branco.png" alt=""></div>
+        <div class="div-img-menu"><img class="img-menu" src="img/Logo Horizontal Transparente.png" alt=""></div>
         <div class="menu-itens">
-            <div class="div-menu-item"><img class="icon-calculadora" src="img/calculadora (1).png" alt="">
-                <P class="menu-item">Calculadora</P></div>
-            <div class="div-menu-item"><img class="icon-laudo" src="img/laudo.png" alt="">
-                <P class="menu-item">Laudo</P></div>
-            <div class="div-menu-item"><img class="icon-contrato" src="img/contrato (1).png" alt="">
-                <P class="menu-item">Contrato</P></div>
+            <a href="#home" class="a-menu-item" id="div1"><img class="icon-calculadora" src="img/botao-home.png" alt="">
+                <P class="menu-item">Home</P></a>
+            <a href="#section1" class="a-menu-item" id="div1"><img class="icon-calculadora" src="img/calculadora (1).png" alt="">
+                <P class="menu-item">Calculadora</P></a>
+            <a href="#section2"  class="a-menu-item"><img class="icon-laudo" src="img/laudo.png" alt="">
+                <P class="menu-item">Laudo</P></a>
+            <a href="#section3" class="a-menu-item"><img class="icon-contrato" src="img/contrato (1).png" alt="">
+                <P class="menu-item">Contrato</P></a>
             
         </div>
     </div>
     
 </div>    
 
-<div class="container">
+
+<div class="home" id="home">
+    <div class="home-content">
+        <h1>Sistema Jardini</h1>
+        <textarea id="notepad" placeholder="leads..."></textarea>
+    </div>
+</div>
+
+
+<div class="container" >
     
     
    
-    <div class="container-content">
+    <div class="container-content" id="section1">
 
         <div class="container-elements">
             <div class="calculadora-div">
@@ -53,7 +65,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="nome">Valor do Veículo/Imóvel</label>
+                        <label for="nome">Valor do Veículo/Empréstimo</label>
                         <input type="number" step="0.01" id="Valor-do-veiculo" name="nome" required>
                     </div>
                     <div class="form-group">
@@ -144,7 +156,7 @@
     
 </div>
 
-<div class="container-2">
+<div class="container-2" id="section2">
     
     <div class="container-2-content">
         <div class="formulario-contratante">
@@ -173,7 +185,7 @@
 </div>
 
 
-<div class="container-3">
+<div class="container-3" id="section3">
     <div class="container3-content">
         <h2 class="h3-contrato"> GERADOR DE CONTRATO</h2>
     

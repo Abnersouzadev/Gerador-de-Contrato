@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -47,10 +52,12 @@ body {
   display: flex;
   justify-content: center;
   max-width: 100%;
+  width: 50%;
 }
 
 .img-menu{
   max-width: 100%;
+  width: 300px;
   margin-right: 0px;
 }
 
@@ -75,7 +82,7 @@ body {
 .footer{
   width: 100%;
   height: 100px;
-  background-color: #05162b;
+  background: linear-gradient(to right, #18477D 50%, #37B5DF );
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -89,7 +96,8 @@ body {
 
 .menu-itens{
   display: flex;
-  width: 25%;
+  
+  width: 50%;
   align-items: center;
   margin-right: 10%;
 }
@@ -99,25 +107,89 @@ body {
   margin-bottom: 0px;
   max-width: 100%;
   height: 50px;
-  
-  font-weight: 800;
-  font-size: medium;
+ 
+  font-weight: 600;
+  font-size: small;
   text-align: center;
   
   color: white;
   height: 25px;
 }
 
-.div-menu-item:hover{
+.a-menu-item{
+  text-decoration: none;
+  
+}
+
+.a-menu-item:hover{
   transform: scale(1.2);
   
+}
+
+#home{
+  scroll-margin-top: 130px;
+}
+
+#section1{
+  scroll-margin-top: 100px;
+}
+
+#section2{
+  scroll-margin-top: 100px;
+}
+
+#section3{
+  scroll-margin-top: 80px;
+}
+
+.home{
+  max-width: 100%;
+  width: 100%;
+  height: 750px;
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.home-content{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+textarea{
+            width: 30%;
+            height: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+            resize: none;
+            outline: none;
+            background-image: linear-gradient(0deg, transparent 79px, #ccc 79px, #ccc 81px, transparent 81px), linear-gradient(90deg, transparent 79px, #ccc 79px, #ccc 81px, transparent 81px);
+            background-size: 100% 20px, 20px 100%;
+            background-position: 20px 0, 0 20px;
+            line-height: 20px;
+            padding-left: 20px;
+}
+
+.img-home{
+  height: 500px;
+  width: 500px;
+}
+
+h1{
+  color: white;
 }
 
 .container {
     max-width: 100%;
     width: 100%;
     
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 0px;
     background: linear-gradient(to right, #18477D 50%, #37B5DF ); 
     border-radius: 0px;
@@ -179,7 +251,9 @@ margin-right: 20%;
 
 h2{
   color: white;
+  
 }
+
 h3{
   margin-bottom: 50px;
   margin-top: 30px;
@@ -224,7 +298,7 @@ h3{
   flex-wrap: wrap;
   flex-direction: row;
   width: 50%;
- margin-top: 5px;
+  margin-top: 5px;
   
 }
 
@@ -273,13 +347,13 @@ h3{
 }
 
 .button-calcular:hover{
-  background-color: #031127;
-  color: #fafafa;
+  transform: scale(1.2);
 }
 
 .div-assessoria{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-top: 40px;
   flex-wrap: wrap;
@@ -298,7 +372,7 @@ h3{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: medium;
   font-weight: 600;
-
+  
 }
 
 .button-laudo{
@@ -322,13 +396,11 @@ h3{
 }
 
 .button-laudo:hover{
-  background-color: #031127;
-  color: #fafafa;
+  transform: scale(1.2);
 }
 
 .button-contrato:hover{
-  background-color: #031127;
-  color: #fafafa;
+  transform: scale(1.2);
 }
 .form-group {
     margin-bottom: 20px;
@@ -340,9 +412,11 @@ h3{
 .form-group label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top: 10px;
     color: #fafafa;
+    font-weight: 400;
+    margin-left: 5px;
 }
 .form-group input[type="date"]{
   width: 70%;
@@ -376,6 +450,7 @@ h3{
 }
 
 
+
 .modal {
         
     display: none;
@@ -385,6 +460,7 @@ h3{
     top: 0;
     width: 100%;
     height: 100%;
+    
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
     }
@@ -396,8 +472,10 @@ h3{
         padding: 20px;
         border: 1px solid #888;
         width: 95%;
+        height: 80%;
+        max-height: 80%;
         padding-top: 10px;
-        max-height: 95%;
+        
         
       }
       
@@ -480,6 +558,7 @@ h3{
         display: flex;
         margin: 100px;
         margin-bottom: 30px;
+        
       }
 
 .titulo-table{
@@ -497,6 +576,7 @@ h3{
 .informations-div{
 display: flex;
 justify-content: end;
+max-height: 100%;
 }
 
 .preliminares{
@@ -514,6 +594,7 @@ justify-content: end;
   font-size: smaller;
   text-align: center;
   width: 100%;
+  height: auto;
   border: #888 10px;
   font-weight: 100;
   border: #888 1px solid;
