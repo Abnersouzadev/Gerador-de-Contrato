@@ -247,6 +247,8 @@ function chamarFuncoes() {
 
   function openModal() {
     document.getElementById("myModal").style.display = "block";
+    
+
     var nome = document.getElementById("nome").value;
     var email = document.getElementById("email").value;
     var credor = document.getElementById("Financeira").value;

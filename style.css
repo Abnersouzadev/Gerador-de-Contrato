@@ -214,11 +214,14 @@ h1{
 }
 
 @keyframes bounce {
-  0% {
+  0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
   }
-  100% {
-      transform: translateY(0px);
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
   }
 }
 
@@ -242,7 +245,10 @@ h1{
   display: flex;
   width: 300px;
   margin-left: 100px;
+  
 }
+
+
 
 .logo-titulo{
   width: 60px;
@@ -254,6 +260,7 @@ animation: fadeIn 3s, bounce 3s ;
 .img-titulo{
   width: 60px;
   height: 60px;
+  animation: fadeIn 3s, bounce 3s infinite;
 }
 
 .container {
@@ -540,12 +547,13 @@ h3{
     .modal-content {
        
         background-color: #fefefe;
-        margin: 15% auto;
+        margin: 0% auto;
+        margin-top: 10px;
         padding: 20px;
         border: 1px solid #888;
         width: 95%;
-        height: 80%;
-        max-height: 80%;
+        height: 95%;
+        max-height: 100%;
         padding-top: 10px;
         
         
@@ -624,13 +632,22 @@ h3{
         font-weight: 600;
         margin-top: 30px;
         margin-bottom: 5px;
+        
       }
       
       .modal-tables{
         display: flex;
-        margin: 100px;
-        margin-bottom: 30px;
-        
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        width: 80%;
+        height: 100%;
+
+      }
+
+      .tables-content{
+        display: flex;
+        justify-content: center;
       }
 
 .titulo-table{
@@ -659,7 +676,7 @@ max-height: 100%;
   align-items: center;
   height: 30px;
   font-size: small;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .informations-span{
