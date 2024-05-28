@@ -57,7 +57,8 @@ body {
 
 .img-menu{
   max-width: 100%;
-  width: 300px;
+  width: 270px;
+  height: 90px;
   margin-right: 0px;
 }
 
@@ -66,7 +67,7 @@ body {
   text-align: center;
   align-items: center;
   border: #aaa 0px solid;
-  height: 100px;
+  height: 12%;
   border-left: none;
   max-width: 100%;
   margin-left: 20%;
@@ -96,10 +97,10 @@ body {
 
 .menu-itens{
   display: flex;
-  
+  justify-content: space-evenly;
   width: 50%;
   align-items: center;
-  margin-right: 10%;
+  margin-right: 0%;
 }
 
 .menu-item{
@@ -118,7 +119,7 @@ body {
 
 .a-menu-item{
   text-decoration: none;
-  
+  width: 10%;
 }
 
 .a-menu-item:hover{
@@ -146,7 +147,7 @@ body {
   max-width: 100%;
   width: 100%;
   height: 750px;
-  margin-top: 6%;
+  margin-top: 4%;
   display: flex;
   justify-content: center;
   background-color: white;
@@ -156,12 +157,18 @@ body {
   display: flex;
   align-items: center;
   width: 80%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.notepad-div{
+  width: 500px;
+  
 }
 
 textarea{
-            width: 30%;
-            height: 300px;
+            width: 80%;
+            height: 250px;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
@@ -174,6 +181,9 @@ textarea{
             background-position: 20px 0, 0 20px;
             line-height: 20px;
             padding-left: 20px;
+            margin-top: 300px;
+            margin-left: 100px;
+            
 }
 
 .img-home{
@@ -182,7 +192,46 @@ textarea{
 }
 
 h1{
-  color: white;
+  color: #18477D;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 0px;
+
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 4px #18477D(0, 0, 0, 0.5);
+}
+
+.h2-workplace{
+  color: #05162b;
+  margin-top: 48px;
+  font-size: large;
+  margin-bottom: 0px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.h1-div-home{
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-titulos{
+  display: flex;
+  width: 300px;
+  margin-left: 100px;
+}
+
+.logo-titulo{
+  width: 40px;
+  height: 80px;
+margin-right: 5px;
+}
+
+.img-titulo{
+  width: 60px;
+  height: 60px;
 }
 
 .container {
@@ -274,7 +323,7 @@ h3{
 
 .h3-dados-financeiros{
   margin-bottom: 30px;
-  
+  margin-top: 5px;
 }
 .formulario-contratante{
   display: flex;
@@ -340,7 +389,7 @@ h3{
   width: 100px;
   margin-bottom: 20px;
   margin-top: 35px;
-  margin-right: 60px;
+  margin-right: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: medium;
   font-weight: 600;
@@ -408,6 +457,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .form-group label {
     display: block;
@@ -416,7 +466,7 @@ h3{
     margin-top: 10px;
     color: #fafafa;
     font-weight: 400;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .form-group input[type="date"]{
   width: 70%;
