@@ -35,13 +35,13 @@ body {
 .icon-calculadora-home{
   width: 50px;
   height: 50px;
-  animation: fadeIn 3s, bounce 5s infinite;
+  animation: fadeIn 3s, bounce 3s infinite;
 }
 
 .icon-laudo-home{
   width: 50px;
   height: 50px;
-  animation: fadeIn 3s, bounce 5s infinite;
+  animation: fadeIn 3s, bounce 4s infinite;
 }
 
 .icon-contrato-home{
