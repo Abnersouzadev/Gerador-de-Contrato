@@ -30,6 +30,26 @@ body {
   display: flex;
 }
 
+
+
+.icon-calculadora-home{
+  width: 50px;
+  height: 50px;
+  animation: fadeIn 3s, bounce 5s infinite;
+}
+
+.icon-laudo-home{
+  width: 50px;
+  height: 50px;
+  animation: fadeIn 3s, bounce 5s infinite;
+}
+
+.icon-contrato-home{
+  width: 50px;
+  height: 50px;
+  animation: fadeIn 3s, bounce 5s infinite;
+}
+
 .icon-calculadora{
   height: 30px;
   width: 30px;
@@ -157,8 +177,19 @@ body {
   display: flex;
   align-items: center;
   width: 80%;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.home-titulos{
+  margin-top: 0px;
+}
+
+.menu-itens-home{
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .notepad-div{
@@ -311,6 +342,8 @@ animation: fadeIn 3s, bounce 3s ;
   flex-direction: column;
   margin-left: 20%;
   margin-right: 20%;
+  align-items: center;
+ padding-top: 100px;
 }
 
 .container-content{
@@ -340,22 +373,31 @@ h3{
 }
 
 .h3-contrato{
-  text-align: center;
-  margin-top: 100px;
+  text-align: start;
+  margin-top: 10px;
+  letter-spacing: 3px;
 }
 
 .h3-laudo{
   color: #ffffff;
   font-weight: 600;
-  font-size: larger;
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  margin-left: 5px;
+  width: auto;
+  
 }
 
 .h3-dados-financeiros{
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   margin-top: 5px;
+  letter-spacing: 3px;
 }
 .formulario-contratante{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   width: 80%;
