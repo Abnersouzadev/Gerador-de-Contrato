@@ -61,6 +61,10 @@ input{
     border: 1px solid rgb(172, 169, 169);
 }
 
+#email-contrato{
+  width: 350px;
+}
+
 #form-client-data{
     display: flex;
     flex-wrap: wrap;

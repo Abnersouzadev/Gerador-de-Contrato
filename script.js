@@ -3,22 +3,22 @@
 //valor do veiculo menos a entrada
 
 function subtrairValorFinanciado() {
-    // Seleciona os elementos de entrada
+    
     let valorFinanciado = document.getElementById('Valor-Financiado')
     let valorVeiculo = document.getElementById('Valor-do-veiculo')
     let entrada = document.getElementById('Entrada')
 
-    // Obtém os valores dos campos e converte para números
+    
     var valor1 = parseFloat(valorVeiculo.value);
     var valor2 = parseFloat(entrada.value);
     
-    // Verifica se os valores são válidos
+   
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 - valor2;
         valorFinanciado.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         valorFinanciado.value = "Por favor, insira números válidos em todos os campos";
     }
 }
@@ -27,22 +27,22 @@ function subtrairValorFinanciado() {
 //parcelas restantes : quantidade de parcela - parcelas pagas
 
 function subtrairParcelasRestantes() {
-    // Seleciona os elementos de entrada
+    
     let parcelasRestantes = document.getElementById('parcelas-restantes')
     let quantidadeParcela = document.getElementById('quantidade-de-parcelas')
     let parcelasPagas = document.getElementById('parcelas-pagas')
 
-    // Obtém os valores dos campos e converte para números
+    s
     var valor1 = parseFloat(quantidadeParcela.value);
     var valor2 = parseFloat(parcelasPagas.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 - valor2;
         parcelasRestantes.value = resultado;
     } else {
-        // Caso os valores não sejam válidos
+        
         parcelasRestantes.value = "Por favor, insira números válidos em todos os campos";
     }
 }
@@ -50,183 +50,181 @@ function subtrairParcelasRestantes() {
 //valor total : quantidade de parcelas restantes X valor atual da parcela
 
 function multiplicarValorTotal() {
-    // Seleciona os elementos de entrada
+    
     let valorTotal = document.getElementById('valor-total')
-    let quantidadeParcela = document.getElementById("parcelas-restantes")
+    let quantidadeParcela = document.getElementById("quantidade-de-parcelas")
     let valorAtualParcela = document.getElementById("Valor-atual-parcela")
 
-    // Obtém os valores dos campos e converte para números
+    
     var valor2 = parseFloat(quantidadeParcela.value);
     var valor1 = parseFloat(valorAtualParcela.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 * valor2;
         valorTotal.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         valorTotal.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-//valor do juros : quantidade de parcelas x valor atual da parcela
+
 
 function subtrairValorJuros() {
-    // Seleciona os elementos de entrada
-    let valorJuros = document.getElementById('valor-do-juros')
-    let quantidadeParcela = document.getElementById('quantidade-de-parcelas')
-    let valorParcela = document.getElementById('Valor-atual-parcela')
-
-    // Obtém os valores dos campos e converte para números
-    var valor1 = parseFloat(quantidadeParcela.value);
-    var valor2 = parseFloat(valorParcela.value);
     
-    // Verifica se os valores são válidos
+    let valorJuros = document.getElementById('valor-do-juros')
+    let valorFinanciado = document.getElementById('Valor-Financiado')
+    let valorTotal = document.getElementById('valor-total')
+
+    
+    var valor1 = parseFloat(valorFinanciado.value);
+    var valor2 = parseFloat(valorTotal.value);
+    
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
-        var resultado = valor2 * valor1;
+        
+        var resultado = valor1 - valor2;
         valorJuros.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         valorJuros.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-//juros abusivos : valor do juros X 1.5
+
 
 function multiplicarJurosAbusivos() {
-    // Seleciona os elementos de entrada
+    
     let jurosAbusivos = document.getElementById('juros-abusivos')
     let valorJuros = document.getElementById('valor-do-juros')
+
     
-
-
-    // Obtém os valores dos campos e converte para números
     var valor1 = parseFloat(valorJuros.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 / 1.5;
         jurosAbusivos.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         valorJuros.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-//juros permitidos : juros abusivos - valor do juros
+
 
 function subtrairJurosPermitidos() {
-    // Seleciona os elementos de entrada
+    
     let jurosPermitidos = document.getElementById('juros-permitidos')
     let jurosAbusivos = document.getElementById('juros-abusivos')
     let valorJuros = document.getElementById('valor-do-juros')
 
-    // Obtém os valores dos campos e converte para números
-    var valor1 = parseFloat(jurosAbusivos.value);
-    var valor2 = parseFloat(valorJuros.value);
     
-    // Verifica se os valores são válidos
+    var valor1 = parseFloat(valorJuros.value);
+    var valor2 = parseFloat(jurosAbusivos.value);
+    
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 - valor2;
         jurosPermitidos.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         jurosPermitidos.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-// juros por parcela : juros abusivos DIVIDIDO quantidade de parcelas
+
 
 function dividirJurosPorParcela() {
-    // Seleciona os elementos de entrada
+    
     let jurosPorParcela = document.getElementById('juros-por-parcela')
     let jurosAbusivos = document.getElementById('juros-abusivos')
     let quantidadeParcela = document.getElementById('quantidade-de-parcelas')
 
-    // Obtém os valores dos campos e converte para números
+    
     var valor1 = parseFloat(jurosAbusivos.value);
     var valor2 = parseFloat(quantidadeParcela.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+       
         var resultado = valor1 / valor2;
         jurosPorParcela.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         jurosPorParcela.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-//parcela corrigida : valor atual da parcela - juros por parcela
+
 
 function subtrairParcelaCorrigida() {
-    // Seleciona os elementos de entrada
+    
     let parcelaCorrigida = document.getElementById('parcela-corrigida')
     let valorAtualParcela = document.getElementById('Valor-atual-parcela')
     let jurosPorParcela = document.getElementById('juros-por-parcela')
 
-    // Obtém os valores dos campos e converte para números
+    
     var valor1 = parseFloat(valorAtualParcela.value);
     var valor2 = parseFloat(jurosPorParcela.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 - valor2;
         parcelaCorrigida.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         parcelaCorrigida.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-//valor do reenbolso : juros por parcela X parcelas pagas
+
 
 function multiplicarValorReenbolso() {
-    // Seleciona os elementos de entrada
+    
     let valorReenbolso = document.getElementById('valor-reenbolso')
     let jurosPorParcela = document.getElementById('juros-por-parcela')
     let parcelasPagas = document.getElementById('parcelas-pagas')
 
-    // Obtém os valores dos campos e converte para números
+    
     var valor1 = parseFloat(jurosPorParcela.value);
     var valor2 = parseFloat(parcelasPagas.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 * valor2;
         valorReenbolso.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         valorReenbolso.value = "Por favor, insira números válidos em todos os campos";
     }
 }
 
-//valor de economia : juros por parcela X parcelas restantes
+
 
 function multiplicarValorEconomia() {
-    // Seleciona os elementos de entrada
+   
     let valorEconomia = document.getElementById('valor-da-economia')
     let jurosPorParcela = document.getElementById('juros-por-parcela')
     let parcelasRestantes = document.getElementById('parcelas-restantes')
 
-    // Obtém os valores dos campos e converte para números
+    
     var valor1 = parseFloat(jurosPorParcela.value);
     var valor2 = parseFloat(parcelasRestantes.value);
     
-    // Verifica se os valores são válidos
+    
     if (!isNaN(valor1) && !isNaN(valor2)) {
-        // Subtrai os valores e exibe o resultado
+        
         var resultado = valor1 * valor2;
         valorEconomia.value = resultado.toFixed(2);
     } else {
-        // Caso os valores não sejam válidos
+        
         valorEconomia.value = "Por favor, insira números válidos em todos os campos";
     }
 }
@@ -349,6 +347,10 @@ function chamarFuncoes() {
 
   }
 
+  function preventDefault(event){
+    event.preventDefault();
+  }
+
   function formatarNumero(numero) {
     // Separar a parte inteira da parte decimal, se houver
     var partes = numero.toString().split(".");
@@ -389,7 +391,7 @@ function chamarFuncoes() {
     rowTotalFinanciado.deleteCell(1)
     rowTotalAberto.deleteCell(1);
     rowJurosAplicado.deleteCell(1);
-    rowParcelaRecalculada.deleteCell(1)
+    rowParcelaRecalculada.deleteCell(1);
     rowJurosParcela.deleteCell(1);
     rowReenbolso.deleteCell(1);
     rowJurosAbusivos.deleteCell(1)
