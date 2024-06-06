@@ -32,7 +32,7 @@ function subtrairParcelasRestantes() {
     let quantidadeParcela = document.getElementById('quantidade-de-parcelas')
     let parcelasPagas = document.getElementById('parcelas-pagas')
 
-    s
+    
     var valor1 = parseFloat(quantidadeParcela.value);
     var valor2 = parseFloat(parcelasPagas.value);
     
@@ -85,7 +85,7 @@ function subtrairValorJuros() {
     
     if (!isNaN(valor1) && !isNaN(valor2)) {
         
-        var resultado = valor1 - valor2;
+        var resultado = valor2 - valor1;
         valorJuros.value = resultado.toFixed(2);
     } else {
         
